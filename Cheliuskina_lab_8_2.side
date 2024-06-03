@@ -1,0 +1,177 @@
+{
+  "id": "fc9777c2-570e-48c9-93d2-fc8f37521701",
+  "version": "2.0",
+  "name": "Челюскіна_lab_8_2",
+  "url": "https://kpi.ua",
+  "tests": [{
+    "id": "dd2870bd-e11f-4d63-a9a7-735bd73e0008",
+    "name": "test 2",
+    "commands": [{
+      "id": "541c238f-2889-4c0d-841d-b3578ceebdca",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a92d5feb-0a08-4666-9578-8295a282a8f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1946483-f1c8-47b6-aee5-ab80c77cc4a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Кафедри",
+      "targets": [
+        ["linkText=Кафедри", "linkText"],
+        ["css=#block-thex-structure .menu-item:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Кафедри')])[3]", "xpath:link"],
+        ["xpath=//nav[@id='block-thex-structure']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/chairs')])[3]", "xpath:href"],
+        ["xpath=//nav/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2842b7cf-b067-44f5-965b-e03b26dcefce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Кафедра біоенергетики, біоінформатики та екобіотехнології (КББЕ), ФБТ",
+      "targets": [
+        ["linkText=Кафедра біоенергетики, біоінформатики та екобіотехнології (КББЕ), ФБТ", "linkText"],
+        ["css=.views-row:nth-child(22) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кафедра біоенергетики, біоінформатики та екобіотехнології (КББЕ), ФБТ')]", "xpath:link"],
+        ["xpath=//div[@id='block-thex-content']/div/div/div/div[22]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kbbe-fbt')]", "xpath:href"],
+        ["xpath=//div[22]/div/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кафедра біоенергетики, біоінформатики та екобіотехнології (КББЕ), ФБТ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d039d88-53ed-4a5b-8176-70076e4fa33f",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//h1/span",
+      "targets": [],
+      "value": "department_name"
+    }, {
+      "id": "b56cf032-36ae-44bd-b816-92cc78c02fcf",
+      "comment": "",
+      "command": "echo",
+      "target": "Назва Кафедри: ${department_name}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61b5385c-19bc-4559-9a08-0c652b0c45e5",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@itemprop=\"address\"]",
+      "targets": [],
+      "value": "address"
+    }, {
+      "id": "dcc658a6-0cbd-4928-bb47-28aef64dac70",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"block-thex-content\"]/div/article/div/div[3]/div/blockquote/p/span[1]",
+      "targets": [],
+      "value": "telephone"
+    }, {
+      "id": "d5aedc55-4217-4a2e-87c7-1262eb3e4692",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"block-thex-content\"]/div/article/div/div[3]/div/blockquote/p/span[3]",
+      "targets": [],
+      "value": "mail"
+    }, {
+      "id": "0f3d8be5-d230-42c6-85cf-47f76228e768",
+      "comment": "",
+      "command": "echo",
+      "target": "${address}; ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0b4eef2-1ece-44da-b2e5-784d7a256bd0",
+      "comment": "",
+      "command": "echo",
+      "target": "Telephone: ${telephone}; ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d186c01a-9524-4c4f-87fc-3344890d886b",
+      "comment": "",
+      "command": "echo",
+      "target": "E-mail: ${mail}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82e1ee46-90c3-4933-9f63-a7f15ca290af",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Співробітники КББЕ",
+      "targets": [
+        ["linkText=Співробітники КББЕ", "linkText"],
+        ["css=.field-item:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Співробітники КББЕ')]", "xpath:link"],
+        ["xpath=//div[@id='block-thex-content']/div/article/div/div[8]/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://keb.kpi.ua/pro-kafedru/spivrobitnyky/')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Співробітники КББЕ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaacbc25-052d-41a3-8cb2-5da071ff5cf9",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "xpath=//div[@class=\"logobox\"]/a/img@src",
+      "targets": [],
+      "value": "logo_url"
+    }, {
+      "id": "4a86677b-277c-4180-a15e-fbf0aef962fd",
+      "comment": "",
+      "command": "echo",
+      "target": "Logo url: ${logo_url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76079892-067e-4791-93bc-a45f0a792fd1",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"post-15\"]/div/table/tbody/tr[2]/td",
+      "targets": [],
+      "value": "teacher_num"
+    }, {
+      "id": "5cede7dd-921d-4fa5-a839-b24be54d8dec",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"post-15\"]/div/table/tbody/tr[2]/td[2]",
+      "targets": [],
+      "value": "teacher"
+    }, {
+      "id": "e61ee567-5794-4151-89d9-fea0d529624b",
+      "comment": "",
+      "command": "echo",
+      "target": "Викладач під номером 11: ${teacher}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "157ad116-189a-4491-9bc9-4299027a7e3e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "60d83654-e51e-4980-84ea-3bc1fcb2ee4e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dd2870bd-e11f-4d63-a9a7-735bd73e0008"]
+  }],
+  "urls": ["https://kpi.ua/"],
+  "plugins": []
+}
